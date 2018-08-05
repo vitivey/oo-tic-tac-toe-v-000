@@ -3,7 +3,7 @@ class TicTacToe
     @board =  Array.new(9," ")
   end
 
-  WIN_COMBINATIONS = [
+  @WIN_COMBINATIONS = [
     [0,1,2],
     [3,4,5],
     [6,7,8],
@@ -67,7 +67,7 @@ end
 
 def won?
     winning_combination=[]
-    WIN_COMBINATIONS.each do |win_option|
+    @WIN_COMBINATIONS.each do |win_option|
     win_index_1 = win_option[0]
     win_index_2 = win_option[1]
     win_index_3 = win_option[2]
