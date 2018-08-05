@@ -116,7 +116,7 @@ def winner
   end
 end
 
-def play(board)
+def play
   while !over?
     turn
     turn_count
