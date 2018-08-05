@@ -43,7 +43,7 @@ def turn
   @input = gets.strip
   @index = input_to_index
   if valid_move?
-    move(current_player(@board))
+    move(current_player)
     display_board
   else
     turn
