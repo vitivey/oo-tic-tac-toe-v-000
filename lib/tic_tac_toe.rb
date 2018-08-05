@@ -23,7 +23,7 @@ class TicTacToe
     puts " #{@board[6]} | #{@board[7]} | #{@board[8]} "
   end
 
-  def input_to_index
+  def input_to_index(input= @input)
     @input.to_i - 1
   end
 
@@ -39,7 +39,8 @@ class TicTacToe
     @index.between?(0,8) && !position_taken?
   end
 
-  def turn
+
+    def turn
     puts "Please enter 1-9:"
     @input = gets.strip
     @index = input_to_index
